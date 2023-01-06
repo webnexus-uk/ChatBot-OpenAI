@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Add a background color to the chat screen */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #010141;
+    background-size: cover;
+    background-position: center center;
+    font-smoothing: antialiased;
+  }
+  
+  .logo-container
+  {
+    width: 100%;
+    text-align: center;
+  }
+
+  .codingnexus {
+    color: #fff;
+    margin-top: 15px;
+    font-size: 12px;
+  }
+  .codingnexus a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #loading {
+    font-size: 50px;
+  }
+
+  /* Style the chat box */
+  .chat-box {
+    margin: 0 auto;
+    width: 600px;
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: calc(100vh - 250px);
+    height: calc(100vh - 250px);
+  }
+
+  .codingnexus {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Style the chat box header */
+  .chat-box-header {
+    background-color: #0084ff;
+    color: #ffffff;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  /* Style the chat box body */
+  .chat-box-body {
+    padding: 16px;
+    overflow-y: auto;
+    height: calc(100% - 145px);
+  }
+  
+  /* Style the chat messages */
+  .chat-box-body .message,
+  .chat-box-body .response {
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+  
+  /* Style the user's messages */
+  .chat-box-body .message {
+    background-color: #e6e6e6;
+    color: #333333;
+  }
+  
+  /* Style the chatbot's responses */
+  .chat-box-body .response {
+    background-color: #0084ff;
+    color: #ffffff;
+    text-align: right;
+  }
+  
+  /* Style the chat box footer */
+  .chat-box-footer {
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-top: 1px solid #e6e6e6;
+    padding: 8px 16px;
+  }
+  
+  /* Style the input field */
+  .chat-box-footer input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* Style the button */
+  .chat-box-footer button {
+    margin-left: 8px;
+    padding: 8px 16px;
+    background-color: #0084ff;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Add some hover effects to the button */
+  .chat-box-footer button:hover {
+    background-color: #0073e6;
+  }
+  
+  .chat-box-footer button:active {
+    background-color: #005bbf;
+  }
+  
