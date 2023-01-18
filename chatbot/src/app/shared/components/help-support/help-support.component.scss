@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+#helpdesk {
+  font-family: "Roboto", sans-serif;
+  #helpdesk-popup-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #058dd9;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    z-index: 1000;
+  }
+
+  #helpdesk-popup {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 300px;
+    height: 50vh;
+    min-height: 450px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+    #helpdesk-popup-header {
+      background-color: #058dd9;
+      color: white;
+      font-size: 18px;
+      padding: 10px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      #helpdesk-popup-close-button {
+        float: right;
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+
+    #helpdesk-popup-body {
+      height: calc(100% - 133px);
+      padding: 10px;
+    }
+
+    #helpdesk-popup-footer {
+      background-color: #fff;
+      color: white;
+      font-size: 14px;
+      padding: 10px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      #helpdesk-popup-input {
+        width: 100%;
+        padding: 15px;
+        border: 2px solid #efefef;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+
+      #helpdesk-popup-submit-button {
+        width: 100%;
+        padding: 10px;
+        background-color: #2ca1da;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 700;
+      }
+    }
+
+    .messages {
+      height: 100%;
+      overflow: auto;
+      .message {
+        display: flow-root;
+        width: 100%;
+        .client {
+          background-color: #efefef;
+          color: black;
+          padding: 10px;
+          border-radius: 0px 5px 5px 5px;
+          margin-bottom: 10px;
+          display: inline-block;
+          max-width: 80%;
+        }
+
+        .user {
+          background-color: #058dd9;
+          color: #fff;
+          padding: 10px;
+          border-radius: 5px 5px 0 5px;
+          margin-bottom: 10px;
+          display: inline-block;
+          max-width: 80%;
+          text-align: right;
+          float: right;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+
+<div id="helpdesk">
+    <button id="helpdesk-popup-button" (click)="openSupportPopup()">
+        Besoin d'informations ?
+    </button>
+    <div id="helpdesk-popup" [style.display]="isOpen ? 'block' : 'none'">
+        <div id="helpdesk-popup-header">
+            Michael
+            <button id="helpdesk-popup-close-button" (click)="openSupportPopup()">
+                Fermer X
+            </button>
+        </div>
+        <div id="helpdesk-popup-body">
+            <div class="messages" #scrollMe>
+                <div *ngFor="let message of messages" class="message">
+                    <div [class]="message.type">
+                        {{message.message}}
+                    </div>
+                </div>
+                <div *ngIf="loading" class="message" style="width: 100%; display:block;">
+                    <div [class]="'client'">...</div>
+                </div>
+            </div>
+        </div>
+        <form id="helpdesk-popup-footer" [formGroup]="chatForm">
+            <input formControlName="message" type="text" id="helpdesk-popup-input" placeholder="Type your message here...">
+            <button id="helpdesk-popup-submit-button" [disabled]="!chatForm.valid" (click)="sendMessage()">Send</button>
+        </form>
+    </div>
+</div>
